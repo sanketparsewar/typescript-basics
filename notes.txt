@@ -1,0 +1,62 @@
+-> npm init 
+Above command create package.json file
+
+-> npm i typescript
+installing typescript
+
+-> tsc --init
+gives typescript configuration file
+
+This commands are use for creating required files for running angular app
+
+
+
+
+
+------------------------------------------------------
+https://geeksarray.com/blog/getting-started-with-angular-and-visual-studio-code
+----------------------------------------------------
+->  Node -v
+
+->  NPM -V
+This command shows your current version of Node.JS and NPM installed on your machine as shown in the following pic.
+
+--------------------------------------------------------------
+------This commands are for creating angular application------
+--------------------------------------------------------------
+
+1. In this step, you will create an Angular application. Execute below Angular CLI commands in sequence in VS Code terminal.
+
+->  mkdir AngularApp
+->  cd AngularApp
+->  ng new FirstAngularApp
+
+The first command creates a directory with name AngularApp, the second command navigates terminal pointer to newly created command and the third command creates a new Angular Application.
+
+You will see a question - Would you like to add angular routing? Enter 'Y' to add a routing module to the application.
+
+The next question will be - Which StyleSheet format would you like to use? Select LESS by arrow keys and press enter.
+
+This will take few minutes to install all required dependencies, once it is done you should be able to compile and execute FirstAngularApp application.
+
+2.Launch FirstAngularApp
+Now your application is ready with default configuration, Angular Component, Angular directives, modules. Using below command you will navigate to application directory.
+
+->  cd FirstAngularApp   
+Following Angular CLI command will launch your application in your default browser. Execute this command in the terminal.
+
+->  ng serve -o    
+
+Angular will compile application and launch it in browser. Check your browser having url http://localhost:4200, your FirstAngularApp is launched there. Angular uses 4200 as the default port. If you want to use different port execute below CLI command on VS code terminal.
+
+->  ng serve --port 5000 -o
+
+3.Update code files in VS Code
+Once you launch Angular application, the terminal still shows the previous command and it will not let you execute any other CLI command. To stop your angular application use the following command.
+
+->  ctrl +c
+This command will ask you to Terminate batch job(Y/N)?. Type Y and press Enter key.
+
+To update angular components, directives or modules use below CLI command.
+
+->  code .
